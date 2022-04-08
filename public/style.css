@@ -1,0 +1,36 @@
+.card-container{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    border: 1px solid rgb(202, 187, 187);
+    border-radius: 20px;
+}
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 10px 10px 10px rgb(221, 217, 224);
+}
+.card img{
+    display: block;
+    width: 190px;
+    margin: 10px auto;
+}
+.card h3, .price{
+    text-align: center;
+}
+.card a{
+    display: block;
+    text-decoration: none;
+    border:1px solid blue;
+    border-radius: 30px;
+    width: 100px;
+    padding: 5px;
+    margin: 10px auto;  
+}
+@media(max-width:600px){
+    .card{
+        width: 100%;
+    }
+}
